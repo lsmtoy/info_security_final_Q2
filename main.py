@@ -9,6 +9,9 @@ def mod(base, exp, divider):
         if (j == 0):
             # print('i is: ', i)
             cnt = cnt + 1
+            '''
+            square-and-multiply algorithm
+            '''
         else:
             temp = (temp ** (2 ** cnt)) % divider
             result = (result * temp) % divider
@@ -80,7 +83,8 @@ if __name__ == '__main__':
             b1 = t1; b2 = t2; b3 = t3;
 
     print('inverse_K is: ', inverse_K)
-    print('M is: ', C2*inverse_K % q)
+    print('Plaintext is: ', C2*inverse_K % q)
+
 
 
 
