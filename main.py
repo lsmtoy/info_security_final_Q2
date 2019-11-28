@@ -11,7 +11,7 @@ def mod(base, exp, divider):
             cnt = cnt + 1
         else:
             temp = (temp ** (2 ** cnt)) % divider
-            result = (result * temp) % q
+            result = (result * temp) % divider
             # print('i is: ', i, '\t', c,'^',2**i,'mod',n,'is:\t',temp_m,'\tm is:',m)
             cnt = 1
         exp = exp >> 1
@@ -38,8 +38,13 @@ if __name__ == '__main__':
             break
     '''
 
+    #K = mod(a, 83, q)
+    #print('K is: ',K)
 
 
+    K = mod(11,23,187)
+
+    '''
     cnt = 0  # counter
     K = 1  # plaintext
     temp_k = C1
@@ -55,8 +60,9 @@ if __name__ == '__main__':
             cnt = 1
         Xa = Xa >> 1
     print('K is: ',K)
+    '''
 
-
+    '''
     #C1 = a^k mod q
     temp_c1 = 1
     cnt = 0  # counter
@@ -73,9 +79,9 @@ if __name__ == '__main__':
             cnt = 1
         K = K >> 1
     print('C1 is: ', C1)
+    '''
 
-
-
+    '''
     a1 = 1
     a2 = 0
     a3 = q
@@ -105,7 +111,7 @@ if __name__ == '__main__':
             b1 = t1;
             b2 = t2;
             b3 = t3;
-
+    '''
 
 
     print('M is: ',C2/K % q)
